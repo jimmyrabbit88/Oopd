@@ -1,0 +1,41 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Zoo{
+
+}
+class Animal{
+- age: int
+- gender: String
+- weight: int
+
++ eat():
++ sleep():
+}
+
+class Bird{
++ fly():
+}
+
+class Fish{
++ swim():
+}
+
+class Chicken{
+
+}
+
+class Sparrow{
+
+}
+
+interface Flyable{
+}
+
+Zoo o-- "0..*" Animal: contains >
+Animal <|-- Fish
+Animal <|-- Bird
+Bird <|-- Chicken
+Bird <|-- Sparrow
+Flyable <|.. Sparrow
+
+@enduml
