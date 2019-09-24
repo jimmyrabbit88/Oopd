@@ -3,7 +3,7 @@ skinparam classAttributeIconSize 0
 class Zoo{
 
 }
-class Animal{
+abstract class Animal{
 - age: int
 - gender: String
 - weight: int
@@ -14,10 +14,12 @@ class Animal{
 
 class Bird{
 + fly():
++ move():
 }
 
 class Fish{
 + swim():
++ move():
 }
 
 class Chicken{

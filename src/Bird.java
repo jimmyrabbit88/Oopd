@@ -5,4 +5,8 @@ public class Bird extends Animal {
     public void fly(){
         System.out.println("Im flying w w w");
     }
+
+    public void move(){
+        System.out.println("bird move");
+    }
 }

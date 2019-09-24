@@ -6,4 +6,8 @@ public class Fish extends Animal {
     public void swim(){
         System.out.println("Im swimming ~~~~");
     }
+
+    public void move() {
+        System.out.println("I am moving");
+    }
 }
